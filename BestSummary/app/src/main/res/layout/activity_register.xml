@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Welcome"
+        android:textColor="#8E24AA"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/registerText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Start with create an account!"
+        android:textColor="#8E24AA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="366dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_user"
+        android:drawableRight="@drawable/ic_baseline_user"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro_medium"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerText2" />
+
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="366dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@drawable/ic_baseline_mail"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro_medium"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editPassw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUsername"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_mail" />
+
+    <EditText
+        android:id="@+id/editPassw"
+        android:layout_width="366dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@drawable/ic_baseline_lock"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro_medium"
+        android:hint="Password(6-12 Character)"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMail"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_lock" />
+
+    <EditText
+        android:id="@+id/editPassw2"
+        android:layout_width="366dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:drawableRight="@drawable/ic_baseline_lock"
+        android:ems="10"
+        android:fontFamily="@font/advent_pro_medium"
+        android:hint="Password again"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassw"
+        app:layout_constraintVertical_bias="0.019"
+        android:autofillHints=""
+        android:drawableEnd="@drawable/ic_baseline_lock" />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="255dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:includeFontPadding="false"
+        android:text="Sing Up"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#8E24AA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassw2"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <TextView
+        android:id="@+id/textButtonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Already registered? Click here to Sing In"
+        android:textColor="#8E24AA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassw2"
+        app:layout_constraintVertical_bias="0.706" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/adminPostUsername"
+                android:layout_width="344dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/advent_pro_medium"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/adminPostDeleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adminPostText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="This is post text"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/adminPostBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="     > Bookname"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/adminPostTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:gravity="end"
+            android:text="time"
+            android:textAlignment="textEnd"
+            android:textSize="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
